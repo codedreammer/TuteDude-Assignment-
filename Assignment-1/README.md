@@ -17,6 +17,10 @@ index.html
 <h1>
 📌 Features Implemented
 </h1>
+<hr>
+<h1>
+🧠 What I Learned
+</h1>
 <h4>
 ✅ Semantic HTML structure (header, section, footer, etc.)
 
@@ -34,8 +38,8 @@ index.html
 
 ✅ Footer with contact info
 </h4>
-
-
+<hr>
+<h1>🧠 What I Learned</h1>
 <h4>
 Creating and structuring a webpage using only HTML
 
