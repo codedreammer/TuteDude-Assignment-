@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Segoe UI' Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffff;   
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: linear-gradient(to right, #ffffff, #f7fbff);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    display: block;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.username-button button {
+    padding: 8px 18px;
+    background-color: #e6f0ff;
+    color: #007bff;
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 38px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.hero-text .highlight {
+    color: #0099ff;
+}
+
+.hero-text p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 14px 25px;
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #007acc;
+    color: yellow;
+}
+
+.hero-image img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .nav-links ul {
+        gap: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+    }
+}
