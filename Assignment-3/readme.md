@@ -34,4 +34,4 @@ This project represents a promotional website for a laundry business offering se
 
 ## 📷 Screenshot
 
-![Landing Page Screenshot](.)
+![Landing Page Screenshot](./screenshort.png)
