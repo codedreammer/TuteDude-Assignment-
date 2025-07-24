@@ -415,3 +415,193 @@ body {
 .reservation-form button.btn-primary:hover {
     background-color:#c6a136;
 }
+
+:root {
+    --primary-color: #D4AF37;
+    --secondary-color: #2c3e50;
+    --accent-color: #3498bd;
+    --light-bg: #f8f9fa;
+    --dark-text:#666;
+    --light-text: #333;
+    --border-radius: 8px;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: white;
+    transition: var(--transition);
+}
+
+.section-title{
+    color: var(--secondary-color);
+}
+
+.menu-item{
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 100%;
+        max-width: 400px;
+    }
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+    .reservation .container {
+        padding: 2rem;
+    }
+    .reservation-form input,
+    .reservation-form textarea {
+        padding: 12px;
+    }   
+    .reservation-form button.btn-primary {
+        padding: 0.75rem 1.5rem;
+    }
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {    
+        padding: 12px;
+    }
+    .contact-form button.btn-primary {
+        padding: 0.75rem 1.5rem;
+    }
+    .map-location {
+        max-width: 100%;
+    }
+    .map-location iframe {
+        height: 250px;
+    }
+    .hero-button {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .hero-button a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.footer{
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 3rem 0 1rem;
+    margin-top: 5rem;
+    box-shadow: 0 -2px 16px rgba(44, 62, 80, 0.12);
+    border-top: 3px solid var(--primary-color);
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: start;
+    width: 100%;
+}
+
+.footer-section {
+    padding: 1rem 0.5rem;
+    border-radius: var(--border-radius);
+    background: rgba(255,255,255,0.03);
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.07);
+    transition: background 0.3s;
+}
+
+.footer-section:hover {
+    background: rgba(212,175,55,0.08);
+}
+
+.footer-section h3, .footer-section h4 {
+    margin-bottom: 1rem;
+    color: #D4AF37;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.footer-section ul {
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-section a {
+    color: #D4AF37;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+    font-weight: 500;
+    display: inline-block;
+    padding: 2px 0;
+}
+
+.footer-section a:hover {
+    color: #fff;
+    text-shadow: 0 2px 8px #D4AF37;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+}
+
+@media (max-width: 900px) {
+    .footer .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 2rem 0 0.5rem;
+    }
+    .footer .container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .footer-section {
+        padding: 0.7rem 0.3rem;
+        font-size: 1rem;
+    }
+    .footer-section h3, .footer-section h4 {
+        font-size: 1.1rem;
+    }
+    .footer-bottom {
+        font-size: 0.85rem;
+        padding-top: 0.5rem;
+    }
+}
+
