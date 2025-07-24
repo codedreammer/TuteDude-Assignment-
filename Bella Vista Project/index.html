@@ -33,7 +33,7 @@
                 <p>Experience the taste of Italy with our authentic cuisine.</p>
                 <div class="hero-button">
                     <a href="#menu" class="btn btn-primary">View Menu</a>
-                    <a href="#contact" class="btn btn-secondary">Make a Reservation</a>
+                    <a href="#reservation" class="btn btn-secondary">Make a Reservation</a>
                 </div>
             </div>
         </section>
@@ -76,6 +76,88 @@
                 </div>
             </div>
         </section>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Bella Vista</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>Bella Vista was founded with a passion for authentic Italian cuisine. Our chefs use traditional recipes and the freshest ingredients to bring the true flavors of Italy to your table.</p>
+                        <p>From our homemade pasta to our wood-fired pizzas, every dish is crafted with love and care. We invite you to join us for a meal that feels like home.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="Images/istockphoto-1446478827-1024x1024.jpg" alt="About Bella Vista">   
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="contact" class="contact"> 
+        <div class="container">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-subtitle">We'd love to hear from you!</p>
+
+    <div class="contact-info-container">
+    <div class="contact-info">
+        <h3>Our Location</h3>
+        <p>123 Bella Vista Avenue, Rome, Italy</p>
+        <h3>Email</h3>
+        <p><a href="mailto:info@bellavista.com">info@bellavista.com</a></p>
+        <h3>Phone</h3>
+        <p>+39 06 1234 5678</p>
+        <h3>Find Us on Map</h3>
+        <div class="map-location">
+            <iframe
+                src="https://www.google.com/maps?q=123+Bella+Vista+Avenue,+Rome,+Italy&output=embed"
+                width="100%"
+                height="200"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <!-- End Map Location Feature -->
+        <h3>Follow Us</h3>
+        <div class="social-links">
+        <a href="https://facebook.com/bellavista" target="_blank">
+            <img src="Images/5279111_network_fb_social media_facebook_facebook logo_icon.png" alt="Facebook" style="height:24px;"> Facebook
+        </a> |
+        <a href="https://instagram.com/bellavista" target="_blank">
+            <img src="Images/5279112_camera_instagram_social media_instagram logo_icon.png" alt="Instagram" style="height:24px;"> Instagram
+        </a> |
+        <a href="https://twitter.com/bellavista" target="_blank">
+            <img src="Images/5279123_tweet_twitter_twitter logo_icon.png" alt="Twitter" style="height:24px;"> Twitter
+        </a>
+        </div>
+    </div>
+    </div>
+
+    <form action="#" method="post" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</div>
+</section>
+
+<section class="reservation" id="reservation">
+    <div class="container">
+        <h2 class="section-title">Make a Reservation</h2>
+        <p class="section-subtitle">Reserve your table online!</p>
+        <form action="#" method="post" class="reservation-form">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+            <input type="number" name="seats" min="1" max="20" placeholder="Number of Seats" required>
+            <textarea name="special" rows="3" placeholder="Special Requests (optional)"></textarea>
+            <button type="submit" class="btn btn-primary">Reserve Now</button>
+        </form>
+    </div>
+</section>
     </main>
 </body>
 </html>
