@@ -8,7 +8,7 @@ html{
     font-family: Lato,sans-serif;
     font-weight: 300;
     font-size: 20px;
-    color: #555;
+    color: #353434;
     text-decoration: optimizeLegibility;
 }
 .row{
@@ -17,7 +17,7 @@ html{
 }
 
 header {
-    background-image: url("img/hero img.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("img/hero img.jpg");
     height: 100vh;
     background-size: cover; 
     background-position: center;
@@ -32,14 +32,58 @@ header {
 
 
 h1{
-    margin: 0;
+    margin-top: 0;
     padding: 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+
 }
 .hero-text-box {
     width: 100%;
     max-width: 1140px;
-    color: #83811c;
+    color: #97951f;
     text-align: center;
     padding: 0 20px;
 }
 
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited {
+    background-color: #cf6d17;
+    color: #fff;
+    border: 1px solid #cf6d17;
+    margin-right: 25px;
+}
+
+.btn-ghost:visited,
+.btn-ghost:link {
+    color: #cf6d17;
+    border: 1px solid #cf6d17;
+}
+
+btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid #cf6d17;
+}
