@@ -24,8 +24,5 @@
 
 ---
 
-## Live demo link:-
+## Live Demo Link:
 https://bella-vista-restaurant-clone.netlify.app/
-
-
-

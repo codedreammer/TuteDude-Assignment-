@@ -32,6 +32,8 @@ This project represents a promotional website for a laundry business offering se
 - HTML5  
 - CSS3 (Flexbox, Grid, Animations)
 
+  ## Live Demo: https://laundary-company.netlify.app/
+
 ## 📷 Screenshot
 
 ![Landing Page Screenshot](./screenshort.png)
