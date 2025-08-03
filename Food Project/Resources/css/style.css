@@ -1,3 +1,4 @@
+/* Base Reset */
 * {
     margin: 0;
     padding: 0;
@@ -5,138 +6,154 @@
 }
 
 html {
-    background-color: #ffffff;
+    scroll-behavior: smooth;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 20px;
     color: #353434;
-    scroll-behavior: smooth;
+    background-color: #fff;
 }
 
+/* Container */
 .row {
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
+/* Header Background */
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/hero img.jpg");
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("img/hero img.jpg") center center / cover no-repeat fixed;
     position: relative;
-    text-align: center;
-    animation: fadeInBackground 2s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes fadeInBackground {
-    from { opacity: 0; transform: scale(1.05); }
-    to { opacity: 1; transform: scale(1); }
+/* Navbar */
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 20px 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-h1 {
-    margin-top: 0;
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    height: 100px;
+    max-height: 120px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+/* Navbar Links */
+.main-nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.main-nav li a {
+    text-decoration: none;
     color: #fff;
-    font-size: 3rem;
-    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    word-spacing: 4px;
-    animation: fadeInText 2s ease-in-out;
+    font-weight: 500;
+    font-size: 0.9rem;
+    position: relative;
+    transition: color 0.3s;
 }
 
-@keyframes fadeInText {
-    0% { opacity: 0; transform: translateY(-30px); }
-    100% { opacity: 1; transform: translateY(0); }
+.main-nav li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e67e22;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
 }
 
+.main-nav li a:hover::after {
+    width: 100%;
+}
+
+.main-nav li a:hover {
+    color: #e67e22;
+}
+
+/* Hero Text */
 .hero-text-box {
-    padding: 0 20px;
-    animation: fadeInBox 2s ease-in-out;
+    text-align: center;
+    color: #fff;
+    animation: fadeInUp 1.5s ease-out;
 }
 
-@keyframes fadeInBox {
-    0% { opacity: 0; transform: translateY(40px); }
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
     100% { opacity: 1; transform: translateY(0); }
 }
 
-.btn:link,
-.btn:visited {
+.hero-text-box h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
     display: inline-block;
     padding: 14px 36px;
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
     border-radius: 50px;
-    transition: all 0.3s ease;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
-    margin-top: 20px;
 }
 
-.btn-full:link,
-.btn-full:visited {
+.btn-full {
     background-color: #cf6d17;
     color: #fff;
     border: 2px solid #cf6d17;
     box-shadow: 0 8px 16px rgba(207, 109, 23, 0.3);
 }
 
-.btn-full:hover,
-.btn-full:active {
+.btn-full:hover {
     background-color: #fff;
     color: #cf6d17;
-    border: 2px solid #cf6d17;
     box-shadow: 0 12px 24px rgba(207, 109, 23, 0.4);
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
+.btn-ghost {
     background-color: transparent;
     color: #cf6d17;
     border: 2px solid #cf6d17;
 }
 
-.btn-ghost:hover,
-.btn-ghost:active {
+.btn-ghost:hover {
     background-color: #cf6d17;
     color: #fff;
     box-shadow: 0 8px 16px rgba(207, 109, 23, 0.3);
-}
-
-.logo {
-    width: auto;
-    height: 100px;
-    float: left;
-    margin-top: 20px;
-}
-
-.main-nav {
-    float: right;
-    margin-top: 55px;
-    list-style: none;
-}
-
-.main-nav li {
-    display: inline-block;
-    margin-left: 40px;
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 90%; 
-    border-bottom: 2px solid transparent;
-    padding: 8px 0;
-    transition: border-bottom 0.2s;
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-    border-bottom: 2px solid #e67e22;
-
 }
