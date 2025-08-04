@@ -219,3 +219,24 @@ section {
     line-height: 1.6;
     color: #666;
 }
+
+.Meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.Meals-showcase li {
+    display: block;
+    width: 25%;   
+    float: left;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;
+}
