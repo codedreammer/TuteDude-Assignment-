@@ -220,23 +220,84 @@ section {
     color: #666;
 }
 
+/* Meals Section */
+.section-meals {
+    padding: 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
 .Meals-showcase {
     list-style: none;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .Meals-showcase li {
-    display: block;
-    width: 25%;   
-    float: left;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
 }
 
-.meal-photo{
-    width: 100%;
+.meal-photo {
+    position: relative;
     margin: 0;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .meal-photo img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    filter: brightness(0.9) contrast(1.1);
+}
+
+.meal-photo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(207, 109, 23, 0.593), rgba(231, 126, 34, 0.6));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.meal-photo::after {
+    content: '🍽️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 2rem;
+    z-index: 2;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.meal-photo:hover::before {
+    opacity: 1;
+}
+
+.meal-photo:hover::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.meal-photo:hover img {
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(1.1) contrast(1.2) saturate(1.2);
+}
+
+@media (max-width: 768px) {
+    .Meals-showcase {
+        flex-direction: column;
+    }
+    
+    .meal-photo img {
+        height: 200px;
+    }
 }
