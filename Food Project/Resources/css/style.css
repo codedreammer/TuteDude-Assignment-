@@ -185,7 +185,7 @@ section {
 
 /* Card Styling */
 .col {
-    background: #fff;
+    background: #ffffff;
     border-radius: 12px;
     padding: 30px 20px;
     margin: 10px;
@@ -292,6 +292,169 @@ section {
     filter: brightness(1.1) contrast(1.2) saturate(1.2);
 }
 
+/* Steps Section */
+.section-steps {
+    background: #f8f9fa;
+}
+
+.section-steps h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.section-steps .row:last-child {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.steps-box {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.steps-box:first-child {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+
+.steps-box:last-child {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 20px;
+}
+
+.steps-box img {
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3), 0 5px 15px rgba(0,0,0,0.2);
+    transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+}
+
+.works-step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.works-step div {
+    background: #cf6d17;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.works-step p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-app {
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+}
+
+.btn-app img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.btn-app:hover img {
+    transform: scale(1.1);
+}
+
+/* Cities Section */
+.section-cities {
+    background: #f8f9fa;
+}
+
+.section-cities h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.section-cities .row:last-child {
+    display: flex;
+    gap: 20px;
+}
+
+.cities-list {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.cities-list img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cities-list h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.city-feature ion-icon {
+    margin-right: 8px;
+    color: #cf6d17;
+}
+
+.city-feature:last-child {
+    color: #1da1f2;
+    cursor: pointer;
+}
+
+.city-feature:last-child:hover {
+    color: #0d8bd9;
+}
+
 @media (max-width: 768px) {
     .Meals-showcase {
         flex-direction: column;
@@ -300,4 +463,15 @@ section {
     .meal-photo img {
         height: 200px;
     }
+    
+    .section-steps .row:last-child {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .section-cities .row:last-child {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
+
