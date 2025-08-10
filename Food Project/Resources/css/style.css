@@ -455,6 +455,72 @@ section {
     color: #0d8bd9;
 }
 
+/* Testimonials Section */
+.section-testimonials {
+    background: #fff;
+}
+
+.section-testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    color: #333;
+}
+
+.section-testimonials .row:last-child {
+    display: flex;
+    gap: 30px;
+}
+
+blockquote {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-left: 4px solid #cf6d17;
+    flex-direction: column;
+    text-align: center;
+}
+
+blockquote:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    background: #fff;
+}
+
+blockquote img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #cf6d17;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+blockquote:hover img {
+    transform: scale(1.1);
+    border-color: #e67e22;
+}
+
+blockquote p {
+    font-style: italic;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+blockquote cite {
+    font-weight: 600;
+    color: #cf6d17;
+    font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
     .Meals-showcase {
         flex-direction: column;
@@ -472,6 +538,16 @@ section {
     .section-cities .row:last-child {
         flex-direction: column;
         gap: 20px;
+    }
+    
+    .section-testimonials .row:last-child {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    blockquote {
+        flex-direction: column;
+        text-align: center;
     }
 }
 
