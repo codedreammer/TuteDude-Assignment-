@@ -35,6 +35,7 @@ body {
     flex-wrap: wrap;
     width: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 .logo img {
@@ -68,6 +69,40 @@ body {
     border-radius: 50px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.mobile-username {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #555;
+    transition: 0.3s;
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
 }
 
 .hero {
@@ -127,31 +162,58 @@ body {
 /* RESPONSIVE */
 @media screen and (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        align-items: stretch;
-        padding: 15px 10px;
-        gap: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
     }
 
-    .logo {
+    .hamburger {
         display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .menu-toggle:checked ~ .nav-links {
+        display: block;
     }
 
     .nav-links ul {
         flex-direction: column;
-        gap: 10px;
-        align-items: center;
+        gap: 0;
+        padding: 20px;
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .mobile-username {
+        display: block;
+    }
+
+    .mobile-username button {
+        padding: 8px 18px;
+        background-color: #e6f0ff;
+        color: #007bff;
+        border: none;
+        border-radius: 50px;
+        font-weight: 500;
+        cursor: pointer;
         width: 100%;
-        padding: 0;
     }
 
     .username-button {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
-        width: 100%;
+        display: none;
     }
 
     .hero {
