@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="Vendors/css/normalize.css" />
 <link rel="stylesheet" href="Vendors/css/grid.css" />
 <link rel="stylesheet" href="Resources/css/style.css" />
+<link rel="stylesheet" href="Resources/css/form-styles.css" />
 
 <!-- Ionicons -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -333,64 +334,86 @@
     </section>
     <section class="section-form">
         <div class="row">
-            <h2>We're happy to hear from you</h2>
+            <h2 class="form-title">We're happy to hear from you</h2>
         </div>
         <div class="row">
-            <form action="#" method="POST">
-                <div class="row">
-                    <div class="col span_1_of_3">
-                        <label>Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Your name" required>
-                    </div>
-                </div>
-
-                </div>
-
-                <div class="row">
-                <div class="col span_1_of_3">
-                        <label>Email</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <div class="form-box">
+                <form action="#" method="POST">
+                    <div class="row form-row">
+                        <div class="col span_1_of_3">
+                            <label class="form-label">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required class="form-input">
+                        </div>
                     </div>
 
-                </div>
-
-                <div class="row">
-                <div class="col span_1_of_3">
-                        <label>How did you find us ?</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <section name="Find-us" id="Find-us">
-                            <option value="friends">friends</option>
-                            <option value="search">Search engine</option>
-                            <option value="ad">Advertisement</option>
-                            <option value="other">other</option>
-                        </section>
+                    <div class="row form-row">
+                        <div class="col span_1_of_3">
+                            <label class="form-label">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required class="form-input">
+                        </div>
                     </div>
 
-                </div>
-                <div class="row">
-                    <div class="col span_1_of_3">
-                        <label>Drop a Line</label>
+                    <div class="row form-row">
+                        <div class="col span_1_of_3">
+                            <label class="form-label">How did you find us ?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="Find-us" id="Find-us" class="form-select">
+                                <option value="friends">Friends</option>
+                                <option value="search">Search engine</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="text" id="ta" cols="30" rows="10"></textarea>
-                </div>
 
-                <div class="row">
-                    <div class="col span_1_of_3">
-                        <label>Drop a Line</label>
+                    <div class="row form-row">
+                        <div class="col span_1_of_3">
+                            <label class="form-label">Drop a Line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="text" id="ta" cols="30" rows="6" class="form-textarea"></textarea>
+                        </div>
                     </div>
-                    <div class="col span-2-of-3">
-                        <textarea name="text" id="ta" cols="30" rows="10"></textarea>
-                </div>
-                </div>
-                
-            </form>
+                    
+                    <div class="row form-submit">
+                        <div class="col span_1_of_3">
+                            <input type="submit" value="Send Message" class="form-button">
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
+    </section>
+    <footer class="footer">
+        <div class="row footer-content">
+            <div class="col span_1_of_3">
+                <ul class="footer-nav">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">IOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="col span_1_of_3">
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+            <p class="copyright">Copyright &copy; 2025 by OmniFood. All rights reserved.</p>
+        </div>
+    </footer>
+
+
 
 </body>
 </html>
