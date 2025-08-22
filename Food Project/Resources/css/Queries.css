@@ -1,0 +1,82 @@
+
+
+/* big tablets 1200px*/
+@media only screen and (max-width: 1200px) {
+    .hero-text-box h1 { font-size: 2.5em; }
+    .row { max-width: 1140px; }
+    .section-features { padding: 60px 0; }
+    .section-plans { padding: 60px 0; }
+    .section-cities { padding: 60px 0; }
+    .section-testimonials { padding: 60px 0; }
+    .form-box { max-width: 700px; }
+    .section-form { padding: 50px 0; }
+    .plan-box { padding: 25px; }
+    .cities-list { padding: 20px; }
+}
+
+/*small tablets to big tablets 0 to 767px to 1023px*/
+@media only screen and (max-width: 1023px) {
+    .row { max-width: 100%; padding: 0 20px; }
+    .hero-text-box h1 { font-size: 2.2em; }
+    .hero-text-box { padding: 0 20px; }
+    .main-nav { display: none; }
+    .section-features .col { width: 48%; margin-bottom: 30px; }
+    .section-plans .col { width: 100%; margin-bottom: 30px; }
+    .section-cities .col { width: 48%; margin-bottom: 30px; }
+    .section-testimonials .col { width: 100%; margin-bottom: 30px; }
+    .form-title { font-size: 2em; }
+    .form-box { max-width: 600px; padding: 30px; }
+    .form-row { margin-bottom: 20px; }
+    .footer { padding: 40px 0 15px; }
+    .social-links { gap: 15px; }
+    .plan-box:hover { transform: translateY(-5px) scale(1.01); }
+}
+
+/*small phones to small tablets from 481px to 767px*/
+@media only screen and (max-width: 767px) {
+    .row { padding: 0 15px; }
+    .hero-text-box h1 { font-size: 1.8em; }
+    .hero-text-box { text-align: center; }
+    .section-features .col { width: 100%; }
+    .section-cities .col { width: 100%; }
+    .section-testimonials .col { width: 100%; }
+    .form-title { font-size: 1.6em; }
+    .form-box { max-width: 90%; padding: 20px; }
+    .form-label { font-size: 1em; }
+    .form-input, .form-select, .form-textarea { padding: 10px 12px; }
+    .form-button { padding: 12px 30px; font-size: 1em; }
+    .footer-nav { text-align: center; }
+    .footer-nav a { font-size: 1em; }
+    .social-links { justify-content: center; }
+    .social-links a { font-size: 1.5em; padding: 8px; }
+    .copyright { font-size: 0.8em; text-align: center; }
+    .cities-list { margin-bottom: 20px; text-align: center; }
+    .plan-box { text-align: center; }
+}
+
+/*small phones from 0 to 480px*/
+@media only screen and (max-width: 480px) {
+    .row { padding: 0 10px; }
+    .hero-text-box h1 { font-size: 1.5em; line-height: 1.2; }
+    .hero-text-box { padding: 0 10px; }
+    .btn { display: block; margin: 10px auto; width: 200px; text-align: center; }
+    .section-features h2 { font-size: 1.5em; }
+    .section-features .col { width: 100%; margin-bottom: 25px; }
+    .section-plans h2 { font-size: 1.5em; }
+    .section-cities h2 { font-size: 1.5em; }
+    .section-testimonials h2 { font-size: 1.5em; }
+    .form-title { font-size: 1.4em; padding-bottom: 10px; }
+    .form-box { padding: 15px; }
+    .form-row { margin-bottom: 15px; }
+    .form-label { font-size: 0.9em; margin-bottom: 5px; }
+    .form-input, .form-select, .form-textarea { padding: 8px 10px; font-size: 0.9em; }
+    .form-button { padding: 10px 25px; font-size: 0.9em; width: 100%; }
+    .footer { padding: 30px 0 10px; }
+    .footer-content { padding-bottom: 20px; }
+    .footer-nav li { margin-bottom: 8px; }
+    .social-links { gap: 10px; }
+    .social-links a { font-size: 1.3em; padding: 6px; }
+    .copyright { font-size: 0.7em; }
+    .cities-list { padding: 15px; }
+    .plan-box { padding: 20px; }
+}
