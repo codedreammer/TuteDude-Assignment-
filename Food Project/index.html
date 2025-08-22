@@ -8,9 +8,13 @@
 <!-- Fonts and CSS -->
 <link rel="stylesheet" href="Vendors/css/normalize.css" />
 <link rel="stylesheet" href="Vendors/css/grid.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet" href="Resources/css/style.css" />
 <link rel="stylesheet" href="Resources/css/form-styles.css" />
 <link rel="stylesheet" href="Resources/css/premium-enhancements.css" />
+<link rel="stylesheet" href="Resources/css/Queries.css" />
+<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+<link rel="stylesheet" href="Resources/css/steps-enhancement.css" />
 
 <!-- Ionicons -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -26,23 +30,23 @@
     <div class="row nav-content">
         <img class="logo" src="Resources/img/logo-removebg-preview.png" alt="Logo-img" />
         <ul class="main-nav">
-        <li><a href="#">Food Delivery</a></li>
-        <li><a href="#">How it Works</a></li>
-        <li><a href="#">Our Cities</a></li>
-        <li><a href="#">Sign-Up</a></li>
+        <li><a href="#feature">Food Delivery</a></li>
+        <li><a href="#hiw">How it Works</a></li>
+        <li><a href="#city">Our Cities</a></li>
+        <li><a href="#signup">Sign-Up</a></li>
         </ul>
     </div>
     </nav>
 
     <div class="hero-text-box">
     <h1>Goodbye junk food<br />Hello super healthy food</h1>
-    <a class="btn btn-full" href="#">I'm Hungry</a>
-    <a class="btn btn-ghost" href="#">Show me more</a>
+    <a class="btn btn-full" href="#plans">I'm Hungry</a>
+    <a class="btn btn-ghost" href="#feature">Show me more</a>
     </div>
 </header>
 
 
-<section class="section-features">
+<section class="section-features" id="feature">
     <div class="row">
         <h2>Get food fast — Not fast food</h2>
         <p class="long-copy">
@@ -151,35 +155,54 @@
     </ul>
 </section>
 
-<section  class="section-steps">
+<section class="section-steps" id="hiw">
     <div class="row">
-        <h2>How it works &mdash; Simple as 1,2,3</h2>
+        <h2 data-aos="fade-up">How it works &mdash; Simple as 1,2,3</h2>
+        <p class="steps-subtitle" data-aos="fade-up" data-aos-delay="100">Get started with OmniFood in just three easy steps</p>
     </div>
     <div class="row">
-        <div class="col span_1_of_3 steps-box">
-            <img src="Resources/img/phone1.jpg" alt="phone image">
+        <div class="col span_1_of_2 steps-box" data-aos="slide-right" data-aos-delay="200">
+            <img src="Resources/img/phone1.jpg" alt="phone image" class="phone-image">
             <div class="app-buttons">
                 <a href="#" class="btn-app"><img src="Resources/img/App_store.png" alt="iOS App Store"></a>
             </div>
         </div>
-        <div class="col span_1_of_3 steps-box">
-            <div class="works-step">
-                <div>1</div>
-                <p>Choose plan that fits best for your need and Sign-Up</p>
+        <div class="col span_1_of_2 steps-box">
+            <div class="works-step" data-aos="zoom-in" data-aos-delay="300">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Choose Your Plan</h3>
+                    <p>Select the perfect meal plan that fits your lifestyle and dietary preferences. From premium to starter options.</p>
+                </div>
+                <div class="step-icon">
+                    <ion-icon name="restaurant-outline"></ion-icon>
+                </div>
             </div>
-            <div class="works-step">
-                <div>2</div>
-                <p>We will deliver your meals fresh to your door every day</p>
+            <div class="works-step" data-aos="zoom-in" data-aos-delay="400">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Fresh Daily Delivery</h3>
+                    <p>Our chefs prepare your meals with organic ingredients and deliver them fresh to your doorstep every day.</p>
+                </div>
+                <div class="step-icon">
+                    <ion-icon name="bicycle-outline"></ion-icon>
+                </div>
             </div>
-            <div class="works-step">
-                <div>3</div>
-                <p>Enjoy your meal and repeat the process</p>
+            <div class="works-step" data-aos="zoom-in" data-aos-delay="500">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Enjoy & Repeat</h3>
+                    <p>Savor your delicious, healthy meals and let us take care of your nutrition journey every single day.</p>
+                </div>
+                <div class="step-icon">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section-cities">
+<section class="section-cities" id="city">
     <div class="row">
         <h2>We are currently in these cities</h2>
     </div>
@@ -248,24 +271,24 @@
     </section>
     <section class="section-testimonials">
         <div class="row">
-            <h2>Our customer can't live without us</h2>
+            <h2 data-aos="fade-up">Our customer can't live without us</h2>
         </div>
         <div class="row">
-            <div class="col span_1_of_3">
+            <div class="col span_1_of_3" data-aos="fade-up" data-aos-delay="100">
                 <blockquote>
                     <img src="Resources/img/people-1.jpg" alt="people-1">
                     <p>"I never knew healthy food could taste this good! OmidFood has changed my life."</p>
                     <cite>— Sarah Johnson</cite>
                 </blockquote>
             </div>
-            <div class="col span_1_of_3">
+            <div class="col span_1_of_3" data-aos="fade-up" data-aos-delay="200">
                 <blockquote>
                     <img src="Resources/img/people-2.jpg" alt="people-2">
                     <p>"The convenience is unbeatable. Fresh meals delivered daily? Yes, please!"</p>
                     <cite>— Mark Thompson</cite>
                 </blockquote>
             </div>
-            <div class="col span_1_of_3">
+            <div class="col span_1_of_3" data-aos="fade-up" data-aos-delay="300">
                 <blockquote>
                     <img src="Resources/img/people-3.jpg" alt="people-3">
                     <p>"I love the variety and quality of meals. It's like having a personal chef!"</p>
@@ -275,12 +298,12 @@
         </div>
     </section>
 
-    <section class="section-plans">
+    <section class="section-plans" id="plans">
     <div class="row">
-        <h2>Start eating healthy today</h2>
+        <h2 data-aos="zoom-in">Start eating healthy today</h2>
     </div>
     <div class="row">
-        <div class="col span_1_of_3">
+        <div class="col span_1_of_3" data-aos="flip-left" data-aos-delay="100">
             <div class="plan-box">
                 <div>
                     <h3>Premium</h3>
@@ -297,7 +320,7 @@
                 <a href="#" class="btn btn-full">Sign Up</a>
                 </div>
 
-                <div class="col span_1_of_3">
+                <div class="col span_1_of_3" data-aos="flip-left" data-aos-delay="200">
             <div class="plan-box">
                 <div>
                     <h3>Pro</h3>
@@ -314,7 +337,7 @@
                 <a href="#" class="btn btn-ghost">Sign Up</a>
                 </div>
 
-                <div class="col span_1_of_3">
+                <div class="col span_1_of_3" data-aos="flip-left" data-aos-delay="300">
             <div class="plan-box">
                 <div>
                     <h3>Starter</h3>
@@ -334,14 +357,14 @@
 
 
     </section>
-    <section class="section-form">
+    <section class="section-form" id="signup">
         <div class="row">
-            <h2 class="form-title">We're happy to hear from you</h2>
+            <h2 class="form-title" data-aos="fade-down">We're happy to hear from you</h2>
         </div>
         <div class="row">
-            <div class="form-box">
+            <div class="form-box" data-aos="zoom-in" data-aos-delay="200">
                 <form action="#" method="POST">
-                    <div class="row form-row">
+                    <div class="row form-row" data-aos="slide-right" data-aos-delay="300">
                         <div class="col span_1_of_3">
                             <label class="form-label">Name</label>
                         </div>
@@ -350,7 +373,7 @@
                         </div>
                     </div>
 
-                    <div class="row form-row">
+                    <div class="row form-row" data-aos="slide-left" data-aos-delay="400">
                         <div class="col span_1_of_3">
                             <label class="form-label">Email</label>
                         </div>
@@ -359,7 +382,7 @@
                         </div>
                     </div>
 
-                    <div class="row form-row">
+                    <div class="row form-row" data-aos="slide-right" data-aos-delay="500">
                         <div class="col span_1_of_3">
                             <label class="form-label">How did you find us ?</label>
                         </div>
@@ -373,7 +396,7 @@
                         </div>
                     </div>
 
-                    <div class="row form-row">
+                    <div class="row form-row" data-aos="slide-left" data-aos-delay="600">
                         <div class="col span_1_of_3">
                             <label class="form-label">Drop a Line</label>
                         </div>
@@ -382,7 +405,7 @@
                         </div>
                     </div>
                     
-                    <div class="row form-submit">
+                    <div class="row form-submit" data-aos="fade-up" data-aos-delay="700">
                         <div class="col span_1_of_3">
                             <input type="submit" value="Send Message" class="form-button">
                         </div>
@@ -393,7 +416,7 @@
     </section>
     <footer class="footer">
         <div class="row footer-content">
-            <div class="col span_1_of_3">
+            <div class="col span_1_of_3" data-aos="fade-up" data-aos-delay="100">
                 <ul class="footer-nav">
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Blog</a></li>
@@ -402,7 +425,7 @@
                     <li><a href="#">Android App</a></li>
                 </ul>
             </div>
-            <div class="col span_1_of_3">
+            <div class="col span_1_of_3" data-aos="fade-up" data-aos-delay="200">
                 <ul class="social-links">
                     <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
                     <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
@@ -410,13 +433,41 @@
                 </ul>
             </div>
         </div>
-        <div class="row footer-bottom">
+        <div class="row footer-bottom" data-aos="fade-up" data-aos-delay="300">
             <p class="copyright">Copyright &copy; 2025 by OmniFood. All rights reserved.</p>
         </div>
-    </footer>
+    </footer> 
 
 
-
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="Resources/js/premium-effects.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+</script>
+
+<script>
+$(document).ready(function(){
+    $("a[href*='#']").on('click', function(event) {
+        if (this.hash !== "" && $(this.hash).length) {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - 50
+            }, 800, function(){
+                window.location.hash = hash;
+            });
+        }
+    });
+});
+
+</script>
+
 </body>
 </html>
+
