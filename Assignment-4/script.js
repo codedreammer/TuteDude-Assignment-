@@ -7,9 +7,11 @@ const greetBtn = document.getElementById("greetBtn");
     if (name === "") {
         greeting.textContent = "Hello";
     } else {
-        greeting.textContent = `Hello, ${name}!`;
+        const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+        greeting.textContent = `Hello, ${capitalizedName}!`;
     }
-    });
+});
+
 
     const boxes = document.querySelectorAll(".box");
 
